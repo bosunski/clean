@@ -4,8 +4,48 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b7904d07d1e1765a0a199aa11d6301a3",
+    "content-hash": "69c72f1d9cf086cb1ae2ec6d1adc0b96",
     "packages": [
+        {
+            "name": "bosunski/todo",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bosunski/todo.git",
+                "reference": "fac8ab42440b0da1e6fd9e4ce75adf3ac9ec1e9b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bosunski/todo/zipball/fac8ab42440b0da1e6fd9e4ce75adf3ac9ec1e9b",
+                "reference": "fac8ab42440b0da1e6fd9e4ce75adf3ac9ec1e9b",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Bosunski\\Todo\\TodoServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Bosunski\\Todo\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bosun Egberinde",
+                    "email": "bosunski@gmail.com"
+                }
+            ],
+            "description": "A Simple Laravel ToDo List Package",
+            "time": "2018-02-06T04:58:22+00:00"
+        },
         {
             "name": "dnoegel/php-xdg-base-dir",
             "version": "0.1",
@@ -3952,7 +3992,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "bosunski/todo": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
